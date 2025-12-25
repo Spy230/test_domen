@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание placeholder изображений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .placeholder {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #1e40af, #3b82f6);
+            opacity: 0.8;
+        }
+        .placeholder-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .promo { width: 400px; height: 200px; background: linear-gradient(45deg, #dc2626, #ef4444); }
+        .gallery { width: 300px; height: 250px; background: linear-gradient(45deg, #059669, #10b981); }
+        .cert { width: 250px; height: 200px; background: linear-gradient(45deg, #7c3aed, #8b5cf6); }
+        .director { width: 400px; height: 500px; background: linear-gradient(45deg, #0891b2, #06b6d4); }
+        
+        h1 { color: #1e40af; }
+        p { color: #64748b; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Placeholder изображения для АвтоТехЦентр</h1>
+    <p>Эти изображения можно сохранить как скриншоты и использовать в качестве временных заполнителей.</p>
+    
+    <h2>Промо-акции (400x200px)</h2>
+    <div class="grid">
+        <div class="placeholder promo">
+            <div class="placeholder-content">
+                <h3>Диагностика подвески</h3>
+                <p>БЕСПЛАТНО</p>
+                <small>attachment (1).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder promo">
+            <div class="placeholder-content">
+                <h3>Замена масла</h3>
+                <p>БЕСПЛАТНО</p>
+                <small>attachment (2).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder promo">
+            <div class="placeholder-content">
+                <h3>Эвакуатор</h3>
+                <p>ДО АВТОСЕРВИСА</p>
+                <small>attachment (3).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder promo">
+            <div class="placeholder-content">
+                <h3>Скидка 15%</h3>
+                <p>ПЕРВЫЙ ВИЗИТ</p>
+                <small>attachment (4).jpeg</small>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Галерея работ (300x250px)</h2>
+    <div class="grid">
+        <div class="placeholder gallery">
+            <div class="placeholder-content">
+                <h4>Ремонт двигателя</h4>
+                <small>attachment (5).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder gallery">
+            <div class="placeholder-content">
+                <h4>Кузовной ремонт</h4>
+                <small>attachment (6).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder gallery">
+            <div class="placeholder-content">
+                <h4>Покраска авто</h4>
+                <small>attachment (7).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder gallery">
+            <div class="placeholder-content">
+                <h4>Ремонт подвески</h4>
+                <small>attachment (8).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder gallery">
+            <div class="placeholder-content">
+                <h4>Диагностика</h4>
+                <small>attachment (9).jpeg</small>
+            </div>
+        </div>
+        <div class="placeholder gallery">
+            <div class="placeholder-content">
+                <h4>Шиномонтаж</h4>
+                <small>attachment (10).jpeg</small>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Сертификаты (250x200px)</h2>
+    <div class="grid">
+        <div class="placeholder cert">
+            <div class="placeholder-content">
+                <h4>Сертификат качества</h4>
+                <small>cert1.jpg</small>
+            </div>
+        </div>
+        <div class="placeholder cert">
+            <div class="placeholder-content">
+                <h4>Лицензия</h4>
+                <small>cert2.jpg</small>
+            </div>
+        </div>
+        <div class="placeholder cert">
+            <div class="placeholder-content">
+                <h4>Квалификация</h4>
+                <small>cert3.jpg</small>
+            </div>
+        </div>
+        <div class="placeholder cert">
+            <div class="placeholder-content">
+                <h4>ISO стандарт</h4>
+                <small>cert4.jpg</small>
+            </div>
+        </div>
+    </div>
+    
+    <h2>Директор (400x500px)</h2>
+    <div class="placeholder director">
+        <div class="placeholder-content">
+            <h3>Андрей Сергеевич</h3>
+            <p>Генеральный директор</p>
+            <small>director.jpg</small>
+        </div>
+    </div>
+    
+    <hr style="margin: 40px 0;">
+    <p><strong>Инструкция:</strong> Откройте этот файл в браузере, сделайте скриншоты каждого блока и сохраните их в папку <code>images/</code> с соответствующими именами файлов.</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Основные страницы
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Запрещаем индексацию служебных файлов
+Disallow: /.vscode/
+Disallow: /README.md
+
+# Sitemap
+Sitemap: https://example.com/sitemap.xml

@@ -1,0 +1,24 @@
+Placeholder images for the automotive service website
+
+Required images for Gallery section (images/gallery/):
+- work1.jpg (400x250) - Engine repair work
+- work2.jpg (400x250) - Body repair after accident
+- work3.jpg (400x250) - Car painting work
+- work4.jpg (400x250) - Suspension repair
+- work5.jpg (400x250) - Computer diagnostics
+- work6.jpg (400x250) - Parts replacement
+
+Required images for Certificates section (images/certificates/):
+- cert1.jpg (300x200) - ISO 9001:2015 Quality Certificate
+- cert2.jpg (300x200) - Repair License from Ministry of Transport
+- cert3.jpg (300x200) - Master Qualification Certificate
+- cert4.jpg (300x200) - Official Partnership Certificate
+
+You can replace these with actual photos of:
+1. Your automotive service facilities and work examples
+2. Real certificates and licenses
+3. Before/after repair photos
+4. Equipment and tools in action
+5. Staff working on vehicles
+
+For now, the site uses CSS gradients and placeholder styling with hover effects and lightbox functionality.
