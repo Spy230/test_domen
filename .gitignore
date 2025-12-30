@@ -1,0 +1,46 @@
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Логи
+*.log
+logs/
+
+# Временные файлы
+*.tmp
+*.temp
+.cache/
+
+# Node.js (если будет использоваться)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Статусные файлы (документация разработки)
+*_STATUS.md
+*_COMPLETE.md
+*_FIX*.md
+CAROUSEL_STATUS.md
+WEBSITE_STATUS.md
+PROJECT_COMPLETE.md
+FINAL_*.md
+FIXES_STATUS.md
+SERVICES_SECTION_FIX.md
+CONTACTS_*.md
+BUTTON_FIX*.md
+RED_THEME_STATUS.md
+DARK_RED_THEME_STATUS.md
+WORKS_CAROUSEL_STATUS.md
+
+# Файлы разработки
+create-placeholders.html
+js/simple-carousel.js
